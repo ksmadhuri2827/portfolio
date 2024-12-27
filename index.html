@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Madhuri Ragu</div>
+      <div class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Madhuri Ragu</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/profile-pic.png "
+            alt="Madhuri Ragu profile picture"
+            class="rounded-image"
+          />
+        </div>
+        <div class="section__text">
+          <p class="section__text__p1">Hello I'm</p>
+          <h1 class="title">Madhuri Ragu</h1>
+          <p class="section__text__p2">Full Stack Developer</p>
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assets/kiransaimadhuriresume.pdf')"
+            >
+              Download CV
+            </button>
+            <button
+              class="btn btn-color-1"
+              onclick="location.href='./#contact'"
+            >
+              Contact Info
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="my linkedin profile"
+              class="icon"
+              onclick="location.href='https://www.linkedin.com/in/madhuri-raagu-711305211/'"
+            />
+
+            <img
+              src="./assets/github.png"
+              alt="my Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/ksmadhuri2827'"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Get to Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile Picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>
+                1+ years <br />
+                Full Stack Development
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Masters Degree(Computer Science)</p>
+              <p><b>GPA: 3.7/4.0</b></p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am passionate about designing and implementing scalable,
+              efficient systems. My expertise lies in developing robust backend
+              APIs and full-stack applications. My skill set includes
+              proficiency in Java, JavaScript, Angular, React, Spring Boot, and
+              MySQL, among other technologies. I excel at tackling complex
+              challenges and optimizing system performance to deliver
+              high-quality solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
+    </section>
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">SKILLS</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="skills-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bootstrap</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Angular</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React JS</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skilss icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Core Java</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Advanced Java</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="skills icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="experience-about-containers">
+          <div class="card">
+            <h2 class="experience-sub-title">
+              Persistent Systems-Software Engineer
+            </h2>
+            <h3 class="date-range">July 2022 – July 2023</h3>
+            <div class="experience-article-container">
+              <experience-article>
+                <ul>
+                  <li>
+                    Implemented a comprehensive testing framework for Amazon Web
+                    Services (AWS) APIs using IntelliJ IDE, storing test results
+                    in AWS Cloud for efficient monitoring and analysis.
+                  </li>
+                  <li>
+                    Troubleshot and resolved code errors, ensuring seamless
+                    functionality with AWS services like DynamoDB and
+                    CloudWatch.
+                  </li>
+                </ul>
+              </experience-article>
+            </div>
+          </div>
+
+          <div class="card">
+            <h2 class="experience-sub-title">
+              Persistent Systems-Intern Software Engineer
+            </h2>
+            <h3 class="date-range">June 2021 – July 2022</h3>
+            <div class="experience-article-container">
+              <experience-article>
+                <ul class="experience-ul">
+                  <li class="experience-li">
+                    Developed an Intern Allocation System using Java and Spring
+                    Boot to automate the allocation of interns to different
+                    departments, increasing efficiency by 30%.
+                  </li>
+                  <li class="experience-li">
+                    Designed and implemented RESTful APIs to manage intern data
+                    and department allocations, ensuring smooth client-server
+                    communication.
+                  </li>
+                  <li class="experience-li">
+                    Created dynamic, responsive front-end interfaces using HTML,
+                    CSS, and JavaScript to provide an intuitive user experience.
+                  </li>
+                  <li class="experience-li">
+                    Collaborated with senior engineers to deploy the system,
+                    integrating it with the company’s internal tools.
+                  </li>
+                  <li class="experience-li">
+                    Tech Stack: Java, Spring Boot, REST APIs, MySQL, HTML, CSS,
+                    JavaScript.
+                  </li>
+                </ul>
+              </experience-article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="project-article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Teaching Assistant Management System
+            </h2>
+            <ul class="projects-ul">
+              <li class="projects-li">
+                Led the design and implementation of a TA Management System to
+                streamline the process of recruiting, evaluating, and managing
+                Teaching Assistants.
+              </li>
+
+              <li class="projects-li">
+                Tech Stack: Java, MySQL, HTML, CSS, JavaScript.
+              </li>
+            </ul>
+            <br />
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/vamsijavvadi7/TA'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.youtube.com/watch?v=zJ0dDDLPDPc'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="project-article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">
+              Full-Stack eCommerce Web Application with Microservices
+            </h2>
+
+            <ul class="projects-ul">
+              <li class="projects-li">
+                Developed an eCommerce website using a microservices
+                architecture, leveraging Spring Boot for the backend and Angular
+                for the frontend, showcasing features like product management,
+                user authentication, and order processing.
+              </li>
+
+              <li class="projects-li">
+                Integrated RESTful APIs for seamless client-server
+                communication, and utilized MySQL for database management.
+              </li>
+
+              <li class="projects-li">
+                Tech Stack: Angular, Java, Spring Boot, MySQL, REST APIs, HTML,
+                CSS, JavaScript.
+              </li>
+            </ul>
+            <br />
+            <div class="btn-container">
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:examplemail@gmail.com">kiransaimadhuri@gmail.com</a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/madhuri-raagu-711305211/"
+              >LinkedIn</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Madhuri Ragu. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
